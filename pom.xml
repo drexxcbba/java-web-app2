@@ -17,17 +17,17 @@
 		<java.version>11</java.version>
 	</properties>
 	<distributionManagement>
-            <repository>
-                <id>central</id>
-                <name>3049e034d90a-releases</name>
-                <url>http://localhost:8081/artifactory/java-web-app2</url>
-            </repository>
-            <snapshotRepository>
-                <id>snapshots</id>
-                <name>3049e034d90a-snapshots</name>
-                <url>http://localhost:8081/artifactory/java-web-app2</url>
-            </snapshotRepository>
-        </distributionManagement>
+    		<repository>
+        		<id>central</id>
+       	 		<name>fadfe896e1fc-releases</name>
+        		<url>http://artifactory:8081/artifactory/test-maven</url>
+    		</repository>
+    		<snapshotRepository>
+        		<id>snapshots</id>
+        		<name>fadfe896e1fc-snapshots</name>
+        		<url>http://artifactory:8081/artifactory/test-maven</url>
+    		</snapshotRepository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
