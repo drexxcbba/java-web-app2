@@ -28,5 +28,13 @@ pipeline {
               sh 'docker build -t drexxcbba/docker-petclinic-demo:latest .'
             }
        }
+       stage('Docker Push') {
+            steps {
+             withCredentials([usernamePassword(credentialsId: 'docker-hub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+                sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+                sh 'docker push drexxcbba/docker-petclinic-demo:latest'
+             }
+           }
+       }
     }
 }
