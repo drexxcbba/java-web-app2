@@ -18,14 +18,14 @@
 	</properties>
 	<distributionManagement>
     		<repository>
-       			<id>central</id>
-        		<name>8cfc764229e0-releases</name>
-        		<url>http://artifactory:8081/artifactory/demo-repo</url>
+        		<id>central</id>
+        		<name>4053678b5d39-releases</name>
+       			<url>http://artifactory:8081/artifactory/demo-repository</url>
     		</repository>
     		<snapshotRepository>
         		<id>snapshots</id>
-        		<name>8cfc764229e0-snapshots</name>
-       			<url>http://artifactory:8081/artifactory/demo-repo</url>
+        		<name>4053678b5d39-snapshots</name>
+        		<url>http://artifactory:8081/artifactory/demo-repository</url>
     		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>
